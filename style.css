@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Arial;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -93,18 +93,84 @@ body {
 
 /* Homepage Section */
 .homepage {
-    background-color: #fff;
-    padding: 20px;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Gradient background for a modern look */
+    padding: 40px 20px;
     text-align: center;
+    border-bottom: 2px solid #eee;
 }
 
 .homepage-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Slightly deeper shadow */
 }
 
 .homepage h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Light text shadow for depth */
+}
+
+.homepage p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.homepage .intro {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Slightly deeper shadow */
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 30px; /* Extra space below introduction */
+}
+
+.homepage .intro p {
+    margin-bottom: 15px;
+}
+
+.homepage .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff; /* Button color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.homepage .cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage {
+        padding: 20px;
+    }
+
+    .homepage-content {
+        padding: 20px;
+    }
+
+    .homepage h2 {
+        font-size: 2em;
+    }
+
+    .homepage p {
+        font-size: 1em;
+    }
 }
 
 /* Recipe Section */
@@ -118,32 +184,13 @@ section {
 
 /* Recipe Box Styling */
 .recipe {
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: #fff;
-    margin-bottom: 15px;
-}
-
-.recipe h3 {
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.recipe p {
-    margin-top: 0;
-    font-weight: bold;
-}
-
-.recipe ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.recipe li {
-    margin-bottom: 5px;
+    border: 1px solid #ddd; /* Lighter border for a softer look */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Increased padding */
+    background-color: #f9f9f9; /* Slightly different background color */
+    margin-bottom: 20px; /* Increased margin between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
 }
 
 /* Back Button */
@@ -173,3 +220,5 @@ section {
     overflow-y: auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
+
+
