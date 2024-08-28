@@ -292,21 +292,21 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(0, 0, 0, 0.7) 100%);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 1000;
-    opacity: 1;
-    animation: fadeOut 2s forwards 3s; /* Fades out after 3 seconds */
+    animation: fadeInOut 5s forwards; /* Fades in and out */
 }
 
 /* Initial title animation */
 #intro-animation .title {
     font-size: 3em;
     animation: slideIn 1.5s ease-out;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Enhanced text shadow for visibility */
 }
 
 /* Subtitle animation */
@@ -314,6 +314,7 @@ section {
     font-size: 2em;
     animation: flash 1s ease-in-out 1.5s;
     margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhanced text shadow for visibility */
 }
 
 /* Slide-in effect for the title */
@@ -336,11 +337,281 @@ section {
     }
 }
 
-/* Fade-out effect for the whole animation */
-@keyframes fadeOut {
-    to {
+/* Fade-in and fade-out effect for the whole animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
         visibility: hidden;
     }
 }
 
+/* Circle Background Details */
+#intro-animation::before,
+#intro-animation::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#intro-animation::before {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+}
+
+#intro-animation::after {
+    width: 500px;
+    height: 500px;
+    bottom: 10%;
+    right: 15%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+}
+
+/* Additional Circles and Squares */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.circle.one {
+    width: 200px;
+    height: 200px;
+    top: 25%;
+    left: 5%;
+}
+
+.circle.two {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 20%;
+}
+
+.circle.three {
+    width: 250px;
+    height: 250px;
+    bottom: 20%;
+    left: 50%;
+}
+
+.squares {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(Squares, (rgba(255, 255, 255, 0.2)) 0%, transparent 50%);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.squares.one {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 5%;
+}
+
+.squares.two {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 20%;
+}
+
+.squares.three {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 20%;
+}
+
+/* Message Texts */
+.message {
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.message.one {
+    top: 10%;
+    left: 10%;
+}
+
+.message.two {
+    bottom: 15%;
+    right: 10%;
+}
+
+.message.three {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.message.four {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    padding: 10px;
+    background-color: #f4f4f4; /* Background color for the search area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Search Input Field */
+.search-input {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    outline: none;
+    font-size: 1em;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-input:focus {
+    width: 400px; /* Expands the search input when focused */
+    border-color: #333; /* Change border color on focus */
+}
+
+/* Search Button */
+/* Adjust header-content to accommodate the search bar */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Style search container for proper alignment */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between search bar and navigation links */
+}
+
+/* Ensure the search input doesn't overlap other elements */
+.search-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-input:focus {
+    width: 250px; /* Slightly expand on focus */
+    border-color: #333;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust navbar to align correctly with the search bar */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 1em;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+#search-button, #back-button {
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#search-button {
+    background-color: #47ddab;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+#back-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+#back-button:hover {
+    background-color: #555;
+}
+
+.not-found {
+    text-align: left;
+    font-size: 1.3em; /* Larger font size for emphasis */
+    color: #ff0000; /* Soft, neutral color */
+    background: #555;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    font-family: 'Arial Black', sans-serif; /* Bold font */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Text shadow for better readability */
+    margin: 10px; /* Margin for spacing */
+}
+
+
+/*Other Existing Scripts Below*/

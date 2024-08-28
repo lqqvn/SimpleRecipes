@@ -6,9 +6,18 @@
     <title>Simple Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!--Existing Scripts-->
 <body>
     <header class="header-content">
-        <div class="logo">SR</div>
+        <div class="logo">SR! Explore Wonderful Recipes!</div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for recipes...">
+            <button id="search-button">Search</button>
+            <button id="back-button">Back</button> <!-- Button to clear search -->
+        </div>
+        <div class="not-found" style="display: none;">Not Found</div> <!-- Message for no results -->
+        
+        </div>
         <nav class="navbar">
             <a href="#homepage" class="nav-link">Homepage</a>
             <div class="dropdown">
@@ -26,8 +35,11 @@
         <div class="homepage">
             <div class="homepage-content">
                 <h2>Simple Recipes</h2>
-                <p>Welcome to Simple Recipes! Here you will find a variety of recipes from different cooking styles, all presented in a simple and stylish manner. Enjoy exploring and cooking!</p>
-                <p>Start exploring different cooking styles by going over to the cooking styles section at the top right of the website!</p>
+                <p>Welcome to Simple Recipes! Here, you'll find a variety of recipes from different cooking styles, all presented in a simple and stylish way. Enjoy exploring and cooking!
+
+                    To start discovering different cooking styles, visit the Cooking Styles section at the top right of the website.</p>
+                    
+                <p>If you notice any issues with the ingredients or instructions, please don't hesitate to contact me via email at harrymangubat2008@gmail.com or through my Facebook account, Suzuki John Harry.</p>
             </div>
         </div>
     </section>
@@ -50,7 +62,7 @@
                         <li>Garlic</li>
                         <li>Onions</li>
                         <li>Salt & Pepper</li>
-                        <li>Calamansi</li>
+                        <li>Calamansi Or Pineapple</li>
                     </ul>
                     <p><strong>Instructions:</strong></p>
                     <ul>
@@ -516,74 +528,869 @@
     <section id="japanese" class="hidden">
         <h2>Japanese Dish</h2>
         <div class="recipe-list">
-            <!-- Japanese Recipes here -->
-             <div class="recipe">
-                <h3>Dish Name</h3>
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-             </div>
-             
-             <!-- Dish Name-->
-             <div class="recipe">
-                <h3>Yakisoba</h3>
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-             </div>
+           <!-- Japanese Recipes here -->
+<div class="recipe">
+    <h3>Chicken Teriyaki</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>500g chicken thighs, boneless and skinless</li>
+        <li>1/4 cup soy sauce</li>
+        <li>1/4 cup mirin</li>
+        <li>2 tablespoons sugar</li>
+        <li>1 tablespoon sesame oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tablespoon ginger, grated</li>
+        <li>Green onions, chopped (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a bowl, mix soy sauce, mirin, sugar, garlic, and ginger to create the teriyaki sauce.</li>
+        <li>Heat sesame oil in a pan over medium heat.</li>
+        <li>Add chicken thighs and cook until browned on both sides.</li>
+        <li>Pour the teriyaki sauce over the chicken and simmer for 10-15 minutes, or until the chicken is cooked through and the sauce has thickened.</li>
+        <li>Garnish with chopped green onions and serve with rice.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Negima (Grilled Chicken and Leek Skewers)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>500g chicken thigh, cut into bite-sized pieces</li>
+        <li>1 bunch leeks, cut into 2-inch pieces</li>
+        <li>1/4 cup soy sauce</li>
+        <li>1/4 cup mirin</li>
+        <li>1/4 cup sake</li>
+        <li>2 tablespoons sugar</li>
+        <li>Salt and pepper to taste</li>
+        <li>Wooden skewers, soaked in water</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Mix soy sauce, mirin, sake, and sugar to create the marinade.</li>
+        <li>Marinate chicken pieces for at least 30 minutes.</li>
+        <li>Thread chicken and leeks onto skewers, alternating them.</li>
+        <li>Grill over medium heat, basting with marinade, until chicken is cooked through and slightly charred.</li>
+        <li>Season with salt and pepper before serving.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Yuba (Tofu Skin)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 liter soy milk</li>
+        <li>1/2 teaspoon coagulant (such as magnesium chloride or calcium sulfate)</li>
+        <li>Water (for mixing coagulant)</li>
+        <li>Optional: soy sauce, sugar for seasoning</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Heat soy milk in a pot until it reaches 80°C (176°F).</li>
+        <li>Mix the coagulant with a small amount of water to create a solution.</li>
+        <li>Stir the coagulant solution into the hot soy milk and let it sit for 10-15 minutes to form curds.</li>
+        <li>Carefully remove the yuba skin that forms on the surface and let it drain on a towel or cooling rack.</li>
+        <li>Season with soy sauce and sugar if desired, or use as is in dishes.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Chawanmushi (Steamed Egg Custard)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>4 large eggs</li>
+        <li>2 cups dashi stock</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon mirin</li>
+        <li>1/4 cup cooked shrimp, chopped</li>
+        <li>1/4 cup sliced mushrooms</li>
+        <li>1/4 cup cooked chicken, chopped</li>
+        <li>Green onions, chopped (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Beat the eggs gently in a bowl.</li>
+        <li>Mix in dashi stock, soy sauce, and mirin.</li>
+        <li>Strain the mixture to remove any bubbles and impurities.</li>
+        <li>Place shrimp, mushrooms, and chicken into small heatproof cups or ramekins.</li>
+        <li>Pour the egg mixture over the ingredients in the cups.</li>
+        <li>Cover with foil and steam in a pot over simmering water for 15-20 minutes, or until the custard is set.</li>
+        <li>Garnish with green onions before serving.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Kakiage (Mixed Vegetable Tempura)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 large carrot, julienned</li>
+        <li>1 small zucchini, julienned</li>
+        <li>1 small onion, thinly sliced</li>
+        <li>1 cup tempura flour</li>
+        <li>1 cup cold water</li>
+        <li>Oil for frying</li>
+        <li>Tempura dipping sauce (tsuyu)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Mix tempura flour with cold water until just combined; do not overmix.</li>
+        <li>Combine vegetables in a bowl.</li>
+        <li>Heat oil in a deep pan or pot to 180°C (350°F).</li>
+        <li>Dip vegetables in the batter and drop into hot oil in small spoonfuls, making sure not to overcrowd the pan.</li>
+        <li>Fry until golden brown and crispy, then drain on paper towels.</li>
+        <li>Serve with tempura dipping sauce.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Oyakodon (Chicken and Egg Rice Bowl)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 chicken thighs, cut into bite-sized pieces</li>
+        <li>1 onion, sliced</li>
+        <li>2 eggs</li>
+        <li>1 cup dashi stock</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon mirin</li>
+        <li>1 tablespoon sugar</li>
+        <li>Cooked rice (for serving)</li>
+        <li>Chopped green onions (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a pan, combine dashi stock, soy sauce, mirin, and sugar. Bring to a simmer.</li>
+        <li>Add chicken and onion to the pan, and cook until chicken is fully cooked and onions are soft.</li>
+        <li>Beat eggs and pour over the chicken mixture. Cover and cook until the eggs are just set.</li>
+        <li>Serve over cooked rice and garnish with green onions.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Chirashi Sushi (Scattered Sushi)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 cups sushi rice, cooked</li>
+        <li>1/4 cup rice vinegar</li>
+        <li>2 tablespoons sugar</li>
+        <li>1 tablespoon salt</li>
+        <li>Assorted sashimi (salmon, tuna, etc.), sliced</li>
+        <li>1 cucumber, sliced</li>
+        <li>1 avocado, sliced</li>
+        <li>Pickled ginger (for garnish)</li>
+        <li>Wasabi (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Mix rice vinegar, sugar, and salt in a bowl until dissolved.</li>
+        <li>Gently fold the vinegar mixture into the cooked sushi rice while it is still warm.</li>
+        <li>Allow the rice to cool to room temperature.</li>
+        <li>Spread the sushi rice in a large serving dish.</li>
+        <li>Top with assorted sashimi, cucumber slices, and avocado slices.</li>
+        <li>Garnish with pickled ginger and wasabi as desired.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Shoyu Ramen</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>4 cups chicken or pork broth</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon miso paste</li>
+        <li>2 garlic cloves, minced</li>
+        <li>1-inch piece of ginger, grated</li>
+        <li>2 packs of ramen noodles</li>
+        <li>2 green onions, sliced</li>
+        <li>1 cup bamboo shoots, sliced</li>
+        <li>1 cup mushrooms, sliced</li>
+        <li>2 eggs, soft-boiled</li>
+        <li>1/2 cup sliced cooked pork or chicken</li>
+        <li>Nori (seaweed) for garnish</li>
+        <li>Sesame seeds for garnish</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a large pot, heat a little oil over medium heat. Add garlic and ginger, and cook until fragrant.</li>
+        <li>Add the broth, soy sauce, and miso paste. Stir well and bring to a simmer.</li>
+        <li>Cook the ramen noodles according to package instructions. Drain and set aside.</li>
+        <li>Add bamboo shoots, mushrooms, and sliced pork or chicken to the broth. Simmer for about 5 minutes.</li>
+        <li>Divide the cooked noodles into bowls and pour the hot broth over them.</li>
+        <li>Top each bowl with soft-boiled eggs, green onions, nori, and sesame seeds.</li>
+        <li>Serve hot and enjoy!</li>
+    </ul>
+</div>
+
+
+<div class="recipe">
+    <h3>Yakiniku (Japanese BBQ)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>500g beef ribeye, thinly sliced</li>
+        <li>1/4 cup soy sauce</li>
+        <li>2 tablespoons mirin</li>
+        <li>2 tablespoons sake</li>
+        <li>2 tablespoons sugar</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon grated ginger</li>
+        <li>1 tablespoon sesame seeds</li>
+        <li>Green onions, chopped (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Mix soy sauce, mirin, sake, sugar, garlic, and ginger to create the marinade.</li>
+        <li>Marinate beef slices for at least 1 hour.</li>
+        <li>Grill beef over medium-high heat until cooked to your desired doneness.</li>
+        <li>Garnish with sesame seeds and green onions before serving.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Katsudon (Pork Cutlet Rice Bowl)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 pork loin cutlet, breaded and fried</li>
+        <li>1 cup dashi stock</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon mirin</li>
+        <li>1 tablespoon sugar</li>
+        <li>1 onion, sliced</li>
+        <li>2 eggs</li>
+        <li>Cooked rice (for serving)</li>
+        <li>Chopped green onions (for garnish)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Slice the fried pork cutlet into strips.</li>
+        <li>In a pan, combine dashi stock, soy sauce, mirin, and sugar. Add onion and cook until soft.</li>
+        <li>Place pork cutlet strips on top of the onion mixture and pour beaten eggs over everything.</li>
+        <li>Cover and cook until the eggs are set.</li>
+        <li>Serve over cooked rice and garnish with green onions.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Goya Champuru (Stir-Fried Bitter Melon)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 bitter melon, sliced</li>
+        <li>200g pork belly, thinly sliced</li>
+        <li>1 onion, sliced</li>
+        <li>2 eggs</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon mirin</li>
+        <li>1 tablespoon vegetable oil</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Blanch bitter melon in boiling water for 1-2 minutes to reduce bitterness. Drain and set aside.</li>
+        <li>Heat oil in a pan and cook pork belly until browned.</li>
+        <li>Add onion and cook until soft.</li>
+        <li>Add bitter melon and stir-fry for a few minutes.</li>
+        <li>Push ingredients to one side of the pan and scramble eggs in the empty space.</li>
+        <li>Mix everything together and season with soy sauce, mirin, salt, and pepper.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Takoyaki (Octopus Balls)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 cup takoyaki flour (or all-purpose flour with dashi powder)</li>
+        <li>1 cup dashi stock</li>
+        <li>1 egg</li>
+        <li>100g cooked octopus, chopped</li>
+        <li>2 tablespoons chopped green onions</li>
+        <li>1/4 cup tempura scraps (tenkasu)</li>
+        <li>Takoyaki sauce</li>
+        <li>Kewpie mayonnaise</li>
+        <li>Bonito flakes (katsuobushi)</li>
+        <li>Seaweed flakes (aonori)</li>
+        <li>Oil for greasing the takoyaki pan</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Mix takoyaki flour, dashi stock, and egg to make the batter.</li>
+        <li>Heat a takoyaki pan and lightly oil each cup.</li>
+        <li>Pour batter into each cup, filling about 3/4 full.</li>
+        <li>Add chopped octopus, green onions, and tempura scraps into each cup.</li>
+        <li>Cook for a few minutes, then use a skewer to turn the balls until they are evenly browned.</li>
+        <li>Serve with takoyaki sauce, mayonnaise, bonito flakes, and seaweed flakes.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Shabu-Shabu (Japanese Hot Pot)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>200g thinly sliced beef</li>
+        <li>1 small napa cabbage, chopped</li>
+        <li>100g mushrooms (shiitake or enoki), sliced</li>
+        <li>200g tofu, cut into cubes</li>
+        <li>1 carrot, sliced</li>
+        <li>1 bunch green onions, chopped</li>
+        <li>2 cups dashi stock</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon mirin</li>
+        <li>Dipping sauce (ponzu or sesame sauce)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Heat dashi stock in a hot pot or large saucepan.</li>
+        <li>Add soy sauce and mirin to the stock.</li>
+        <li>Place vegetables, tofu, and beef into the pot and cook until done.</li>
+        <li>Serve with dipping sauce and enjoy by dipping the cooked ingredients in the sauce.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Tsukemono (Japanese Pickles)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 cucumber, sliced</li>
+        <li>1 carrot, sliced</li>
+        <li>1 daikon radish, sliced</li>
+        <li>1/4 cup rice vinegar</li>
+        <li>1/4 cup soy sauce</li>
+        <li>2 tablespoons sugar</li>
+        <li>1 tablespoon salt</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Combine rice vinegar, soy sauce, sugar, and salt in a bowl.</li>
+        <li>Place sliced vegetables in a jar or container.</li>
+        <li>Pour the vinegar mixture over the vegetables and seal the jar.</li>
+        <li>Refrigerate for at least 24 hours before serving.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Saba Shioyaki (Grilled Mackerel)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 mackerel fillets</li>
+        <li>2 tablespoons salt</li>
+        <li>1 tablespoon sake</li>
+        <li>1 tablespoon soy sauce</li>
+        <li>Lemon wedges (for serving)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Rub salt over mackerel fillets and let sit for 15 minutes.</li>
+        <li>Rinse off the salt and pat the fillets dry.</li>
+        <li>Grill the fillets over medium heat until skin is crispy and fish is cooked through.</li>
+        <li>Brush with sake and soy sauce during grilling.</li>
+        <li>Serve with lemon wedges.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Sushi Rolls</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 cups sushi rice</li>
+        <li>2 1/2 cups water</li>
+        <li>1/2 cup rice vinegar</li>
+        <li>1/4 cup sugar</li>
+        <li>1/4 cup soy sauce</li>
+        <li>Seaweed sheets (nori)</li>
+        <li>1 cucumber, julienned</li>
+        <li>1 avocado, sliced</li>
+        <li>200g fresh fish (like tuna or salmon), sliced (optional)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Rinse sushi rice under cold water until the water runs clear. Cook rice according to package instructions.</li>
+        <li>In a small saucepan, heat rice vinegar, sugar, and soy sauce until the sugar dissolves. Mix this with the cooked rice and let cool.</li>
+        <li>Place a seaweed sheet on a bamboo sushi mat, spread a thin layer of rice over the seaweed, leaving a small border at the top edge.</li>
+        <li>Add cucumber, avocado, and fish (if using) in a line along the bottom edge of the rice.</li>
+        <li>Roll the sushi tightly using the bamboo mat, then slice into pieces. Serve with soy sauce and wasabi.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Miso Soup</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>4 cups dashi broth</li>
+        <li>1/4 cup miso paste (white or red)</li>
+        <li>100g tofu, cubed</li>
+        <li>1/2 cup wakame seaweed, soaked</li>
+        <li>1 green onion, chopped</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Heat dashi broth in a pot over medium heat.</li>
+        <li>Dissolve miso paste in a small amount of hot broth and then stir it back into the pot.</li>
+        <li>Add tofu and wakame seaweed, simmer for 3-4 minutes, or until heated through.</li>
+        <li>Serve garnished with chopped green onions.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Tempura</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 cup all-purpose flour</li>
+        <li>1 cup cornstarch</li>
+        <li>1 teaspoon baking powder</li>
+        <li>1 egg</li>
+        <li>1 cup ice-cold water</li>
+        <li>Vegetable oil, for frying</li>
+        <li>Assorted vegetables (e.g., sweet potatoes, bell peppers, zucchini), sliced</li>
+        <li>Shrimp, peeled and deveined</li>
+        <li>Tempura dipping sauce (tsuyu)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a bowl, mix flour, cornstarch, and baking powder. Whisk together egg and cold water, then add to dry ingredients. Mix lightly; the batter should be lumpy.</li>
+        <li>Heat oil in a deep pan to 350°F (180°C).</li>
+        <li>Dip vegetables and shrimp into the batter and fry in batches until golden and crispy. Drain on paper towels.</li>
+        <li>Serve hot with tempura dipping sauce.</li>
+    </ul>
+</div>
+
+<div class="recipe">
+    <h3>Okonomiyaki</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 cup all-purpose flour</li>
+        <li>1 cup water</li>
+        <li>1/2 cup shredded cabbage</li>
+        <li>2 eggs</li>
+        <li>1/4 cup chopped green onions</li>
+        <li>1/4 cup cooked bacon, chopped</li>
+        <li>Okonomiyaki sauce (or Worcestershire sauce)</li>
+        <li>Mayonnaise</li>
+        <li>Bonito flakes (katsuobushi)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a bowl, mix flour and water to create a smooth batter. Add cabbage, eggs, green onions, and bacon.</li>
+        <li>Heat a non-stick pan over medium heat and lightly oil it.</li>
+        <li>Pour batter into the pan and spread into a circle. Cook for 4-5 minutes on each side, or until golden brown.</li>
+        <li>Top with okonomiyaki sauce, mayonnaise, and bonito flakes before serving.</li>
+    </ul>
+</div>
+
+<!-- Yakisoba -->
+<div class="recipe">
+    <h3>Yakisoba</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>200g yakisoba noodles</li>
+        <li>150g sliced pork or chicken</li>
+        <li>1/2 cup sliced onion</li>
+        <li>1 cup shredded cabbage</li>
+        <li>1/2 cup sliced bell peppers (any color)</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>3 tbsp soy sauce</li>
+        <li>2 tbsp Worcestershire sauce</li>
+        <li>1 tbsp oyster sauce (optional)</li>
+        <li>1 tsp sugar</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped green onions for garnish</li>
+        <li>Shredded nori (seaweed) for garnish (optional)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the yakisoba noodles according to the package instructions. Drain and set aside.</li>
+        <li>In a large pan or wok, heat the vegetable oil over medium-high heat.</li>
+        <li>Add the sliced pork or chicken and cook until browned and cooked through.</li>
+        <li>Add the minced garlic and sliced onions to the pan and cook until the onions are translucent.</li>
+        <li>Add the shredded cabbage and bell peppers to the pan and stir-fry until they begin to soften.</li>
+        <li>Add the cooked noodles to the pan and toss to combine with the vegetables and meat.</li>
+        <li>In a small bowl, mix together the soy sauce, Worcestershire sauce, oyster sauce (if using), and sugar.</li>
+        <li>Pour the sauce mixture over the noodles and stir well to ensure everything is evenly coated.</li>
+        <li>Season with salt and pepper to taste.</li>
+        <li>Continue to cook for a few more minutes until everything is well combined and heated through.</li>
+        <li>Garnish with chopped green onions and shredded nori if desired. Serve hot.</li>
+    </ul>
+</div>
         </div>
     </section>
 
     <section id="italian" class="hidden">
         <h2>Italian Dish</h2>
         <div class="recipe-list">
-            <!-- Italian Recipes here -->
-            <div class="recipe">
-                <h3>Dish Name</h3>
-                <p><strong>Ingredients:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-                <p><strong>Instructions:</strong></p>
-                <ul>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-             </div>
+<!-- Italian Recipes -->
+
+<!-- Recipe 1: Spaghetti Carbonara -->
+<div class="recipe">
+    <h3>Spaghetti Carbonara</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>200g spaghetti</li>
+        <li>150g pancetta or bacon, diced</li>
+        <li>2 large eggs</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>2 garlic cloves, minced</li>
+        <li>Salt and black pepper to taste</li>
+        <li>Fresh parsley for garnish</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the spaghetti according to package instructions. Drain and set aside.</li>
+        <li>In a pan, cook the pancetta or bacon until crispy. Add minced garlic and cook for 1 minute.</li>
+        <li>In a bowl, whisk together eggs and Parmesan cheese.</li>
+        <li>Combine the cooked spaghetti with the pancetta mixture. Remove from heat.</li>
+        <li>Pour the egg and cheese mixture over the pasta and toss quickly to coat. Season with salt and pepper.</li>
+        <li>Garnish with fresh parsley and serve immediately.</li>
+    </ul>
+</div>
+
+<!-- Recipe 2: Margherita Pizza -->
+<div class="recipe">
+    <h3>Margherita Pizza</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 pizza dough</li>
+        <li>1/2 cup tomato sauce</li>
+        <li>1 1/2 cups shredded mozzarella cheese</li>
+        <li>1/4 cup fresh basil leaves</li>
+        <li>2 tablespoons olive oil</li>
+        <li>Salt to taste</li>
+        <li>Black pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Preheat your oven to 220°C (425°F).</li>
+        <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
+        <li>Spread the tomato sauce evenly over the dough.</li>
+        <li>Sprinkle the mozzarella cheese on top.</li>
+        <li>Drizzle with olive oil and season with salt and pepper.</li>
+        <li>Bake for 15-20 minutes, or until the crust is golden and the cheese is melted and bubbly.</li>
+        <li>Top with fresh basil leaves before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 3: Lasagna -->
+<div class="recipe">
+    <h3>Lasagna</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>12 lasagna noodles</li>
+        <li>1 pound ground beef</li>
+        <li>1 onion, chopped</li>
+        <li>2 garlic cloves, minced</li>
+        <li>1 can (400g) tomato sauce</li>
+        <li>1 can (400g) crushed tomatoes</li>
+        <li>2 cups ricotta cheese</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>2 cups shredded mozzarella cheese</li>
+        <li>2 tablespoons dried basil</li>
+        <li>Salt and black pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the lasagna noodles according to package instructions. Drain and set aside.</li>
+        <li>In a skillet, cook the ground beef, onion, and garlic until browned. Drain excess fat.</li>
+        <li>Add tomato sauce, crushed tomatoes, and basil to the skillet. Simmer for 15 minutes. Season with salt and pepper.</li>
+        <li>In a bowl, mix ricotta cheese and Parmesan cheese.</li>
+        <li>Preheat your oven to 180°C (350°F).</li>
+        <li>In a baking dish, spread a layer of meat sauce, followed by a layer of noodles, and then a layer of the cheese mixture. Repeat layers, ending with a layer of mozzarella cheese.</li>
+        <li>Bake for 30-40 minutes, or until the cheese is bubbly and golden. Let cool slightly before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 4: Risotto Milanese -->
+<div class="recipe">
+    <h3>Risotto Milanese</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 1/2 cups Arborio rice</li>
+        <li>4 cups chicken or vegetable broth</li>
+        <li>1/2 cup dry white wine</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>1 small onion, finely chopped</li>
+        <li>2 tablespoons butter</li>
+        <li>1/4 teaspoon saffron threads</li>
+        <li>Salt and black pepper to taste</li>
+        <li>Fresh parsley for garnish</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Heat the broth in a saucepan and keep warm.</li>
+        <li>In a large pan, melt butter and sauté the onion until translucent.</li>
+        <li>Add the Arborio rice and cook, stirring constantly, for 2 minutes.</li>
+        <li>Pour in the white wine and cook until it is mostly absorbed.</li>
+        <li>Begin adding the warm broth, one ladle at a time, stirring frequently until each ladle of broth is absorbed before adding more. Continue until the rice is creamy and cooked through (about 18-20 minutes).</li>
+        <li>Stir in saffron threads and Parmesan cheese. Season with salt and pepper.</li>
+        <li>Garnish with fresh parsley before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 5: Caprese Salad -->
+<div class="recipe">
+    <h3>Caprese Salad</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>4 ripe tomatoes, sliced</li>
+        <li>1 ball of fresh mozzarella cheese, sliced</li>
+        <li>Fresh basil leaves</li>
+        <li>2 tablespoons extra-virgin olive oil</li>
+        <li>1 tablespoon balsamic vinegar</li>
+        <li>Salt and black pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Arrange tomato slices and mozzarella slices on a serving platter, alternating them and overlapping slightly.</li>
+        <li>Scatter fresh basil leaves over the top.</li>
+        <li>Drizzle with olive oil and balsamic vinegar.</li>
+        <li>Season with salt and pepper to taste.</li>
+        <li>Serve immediately or chill until ready to serve.</li>
+    </ul>
+</div>
+
+<!-- Recipe 6: Penne Arrabbiata -->
+<div class="recipe">
+    <h3>Penne Arrabbiata</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>300g penne pasta</li>
+        <li>2 tablespoons olive oil</li>
+        <li>4 garlic cloves, sliced</li>
+        <li>1 teaspoon red pepper flakes</li>
+        <li>1 can (400g) crushed tomatoes</li>
+        <li>Salt to taste</li>
+        <li>Fresh parsley for garnish</li>
+        <li>Grated Parmesan cheese for serving</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the penne pasta according to package instructions. Drain and set aside.</li>
+        <li>In a pan, heat olive oil over medium heat. Add garlic and red pepper flakes and cook until garlic is golden.</li>
+        <li>Add crushed tomatoes to the pan. Simmer for 10-15 minutes. Season with salt.</li>
+        <li>Toss the cooked pasta with the sauce. Garnish with fresh parsley and serve with grated Parmesan cheese.</li>
+    </ul>
+</div>
+
+<!-- Recipe 7: Eggplant Parmesan -->
+<div class="recipe">
+    <h3>Eggplant Parmesan</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 medium eggplants, sliced</li>
+        <li>2 cups marinara sauce</li>
+        <li>2 cups shredded mozzarella cheese</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>1 cup all-purpose flour</li>
+        <li>2 large eggs, beaten</li>
+        <li>2 cups breadcrumbs</li>
+        <li>Olive oil for frying</li>
+        <li>Fresh basil for garnish</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Preheat your oven to 180°C (350°F).</li>
+        <li>Dredge eggplant slices in flour, dip in beaten eggs, and coat with breadcrumbs.</li>
+        <li>Fry the breaded eggplant slices in olive oil until golden and crispy. Drain on paper towels.</li>
+        <li>In a baking dish, spread a layer of marinara sauce, followed by a layer of eggplant slices. Sprinkle with mozzarella and Parmesan cheese. Repeat layers.</li>
+        <li>Bake for 30-35 minutes, or until the cheese is bubbly and golden. Garnish with fresh basil before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 8: Fettuccine Alfredo -->
+<div class="recipe">
+    <h3>Fettuccine Alfredo</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>300g fettuccine pasta</li>
+        <li>1/2 cup unsalted butter</li>
+        <li>1 cup heavy cream</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>2 garlic cloves, minced</li>
+        <li>Salt and black pepper to taste</li>
+        <li>Chopped parsley for garnish</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the fettuccine pasta according to package instructions. Drain and set aside.</li>
+        <li>In a pan, melt butter over medium heat. Add garlic and cook for 1 minute.</li>
+        <li>Pour in heavy cream and bring to a simmer. Stir in Parmesan cheese until melted and smooth.</li>
+        <li>Add the cooked fettuccine to the sauce and toss to coat. Season with salt and pepper.</li>
+        <li>Garnish with chopped parsley before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 9: Gnocchi with Sage Butter -->
+<div class="recipe">
+    <h3>Gnocchi with Sage Butter</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>500g potato gnocchi</li>
+        <li>1/2 cup unsalted butter</li>
+        <li>1/4 cup fresh sage leaves</li>
+        <li>Salt and black pepper to taste</li>
+        <li>Grated Parmesan cheese for serving</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook the gnocchi according to package instructions. Drain and set aside.</li>
+        <li>In a pan, melt butter over medium heat. Add sage leaves and cook until they become crispy and the butter is browned.</li>
+        <li>Add the cooked gnocchi to the pan and toss to coat with the sage butter. Season with salt and pepper.</li>
+        <li>Serve with grated Parmesan cheese.</li>
+    </ul>
+</div>
+
+<!-- Recipe 10: Bruschetta -->
+<div class="recipe">
+    <h3>Bruschetta</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 baguette, sliced</li>
+        <li>2 cups cherry tomatoes, diced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1/4 cup fresh basil, chopped</li>
+        <li>2 tablespoons extra-virgin olive oil</li>
+        <li>Salt and black pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Preheat your oven to 180°C (350°F).</li>
+        <li>Place baguette slices on a baking sheet and toast in the oven for 5-7 minutes, or until lightly browned.</li>
+        <li>In a bowl, mix together diced tomatoes, garlic, basil, olive oil, salt, and pepper.</li>
+        <li>Top each toasted baguette slice with the tomato mixture.</li>
+        <li>Serve immediately as an appetizer or snack.</li>
+    </ul>
+</div>
+
+<!-- Recipe 11: Risotto alla Milanese -->
+<div class="recipe">
+    <h3>Risotto alla Milanese</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>1 1/2 cups Arborio rice</li>
+        <li>1 small onion, finely chopped</li>
+        <li>4 cups chicken or vegetable broth</li>
+        <li>1/2 cup white wine</li>
+        <li>2 tablespoons unsalted butter</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>1/4 teaspoon saffron threads</li>
+        <li>Salt and black pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a saucepan, heat the broth and keep warm.</li>
+        <li>In a large skillet, melt 1 tablespoon of butter. Add onion and cook until translucent.</li>
+        <li>Add rice and cook for 1-2 minutes, stirring frequently.</li>
+        <li>Pour in the white wine and cook until absorbed.</li>
+        <li>Add saffron to the broth, then add a ladle of warm broth to the rice. Stir frequently, adding more broth as it absorbs.</li>
+        <li>Cook until rice is creamy and tender, about 18-20 minutes.</li>
+        <li>Stir in the remaining butter and Parmesan cheese. Season with salt and pepper.</li>
+        <li>Serve hot.</li>
+    </ul>
+</div>
+
+<!-- Recipe 12: Gnocchi -->
+<div class="recipe">
+    <h3>Gnocchi</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 cups mashed potatoes</li>
+        <li>1 cup all-purpose flour</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>1 egg</li>
+        <li>Salt and black pepper to taste</li>
+        <li>1/4 cup butter</li>
+        <li>Fresh sage leaves (optional)</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>In a bowl, mix mashed potatoes, flour, Parmesan cheese, egg, salt, and pepper until a dough forms.</li>
+        <li>Turn dough onto a floured surface and knead gently. Divide dough into sections and roll into ropes. Cut into 1-inch pieces.</li>
+        <li>Press each piece with a fork to create ridges. Cook gnocchi in boiling salted water until they float to the surface, about 2-3 minutes. Remove with a slotted spoon.</li>
+        <li>In a skillet, melt butter over medium heat. Add sage leaves and cook until crispy. Toss gnocchi in the sage butter.</li>
+        <li>Serve hot with extra Parmesan cheese if desired.</li>
+    </ul>
+</div>
+
+<!-- Recipe 13: Eggplant Parmesan (Melanzane alla Parmigiana) -->
+<div class="recipe">
+    <h3>Eggplant Parmesan (Melanzane alla Parmigiana)</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>2 large eggplants, sliced into 1/2-inch rounds</li>
+        <li>2 cups marinara sauce</li>
+        <li>2 cups shredded mozzarella cheese</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>1/2 cup all-purpose flour</li>
+        <li>3 large eggs, beaten</li>
+        <li>1 cup breadcrumbs</li>
+        <li>1/2 cup olive oil</li>
+        <li>Fresh basil leaves (for garnish)</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Preheat the oven to 375°F (190°C).</li>
+        <li>Dredge eggplant slices in flour, dip in beaten eggs, then coat with breadcrumbs.</li>
+        <li>Heat olive oil in a skillet over medium heat. Fry the eggplant slices until golden brown, about 2-3 minutes per side. Drain on paper towels.</li>
+        <li>Spread a thin layer of marinara sauce in the bottom of a baking dish.</li>
+        <li>Arrange a layer of eggplant slices on top of the sauce. Cover with more sauce, mozzarella, and Parmesan cheese.</li>
+        <li>Repeat layers until all ingredients are used, finishing with cheese on top.</li>
+        <li>Bake for 30-35 minutes until bubbly and golden. Garnish with fresh basil before serving.</li>
+    </ul>
+</div>
+
+<!-- Recipe 14: Pesto Pasta -->
+<div class="recipe">
+    <h3>Pesto Pasta</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>12 oz (340 g) pasta (e.g., spaghetti, linguine)</li>
+        <li>1 cup fresh basil leaves</li>
+        <li>1/2 cup pine nuts</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>1/2 cup olive oil</li>
+        <li>2 garlic cloves, minced</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Cook pasta according to package instructions. Drain and set aside.</li>
+        <li>In a food processor, combine basil, pine nuts, Parmesan cheese, and garlic. Pulse until finely chopped.</li>
+        <li>With the processor running, slowly add olive oil until the pesto is smooth. Season with salt and pepper.</li>
+        <li>Toss the cooked pasta with the pesto until evenly coated.</li>
+        <li>Serve immediately, garnished with additional Parmesan cheese if desired.</li>
+    </ul>
+</div>
+
+<!-- Recipe 15: Osso Buco -->
+<div class="recipe">
+    <h3>Osso Buco</h3>
+    <p><strong>Ingredients:</strong></p>
+    <ul>
+        <li>4 veal shanks (about 1.5-2 inches thick)</li>
+        <li>1/4 cup all-purpose flour</li>
+        <li>2 tbsp olive oil</li>
+        <li>1 large onion, chopped</li>
+        <li>2 garlic cloves, minced</li>
+        <li>2 carrots, diced</li>
+        <li>2 celery stalks, diced</li>
+        <li>1 cup white wine</li>
+        <li>1 can (14.5 oz) crushed tomatoes</li>
+        <li>2 cups beef broth</li>
+        <li>1 bay leaf</li>
+        <li>1 tsp dried thyme</li>
+        <li>1 lemon, zested</li>
+        <li>1/4 cup chopped fresh parsley</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>Preheat oven to 325°F (163°C).</li>
+        <li>Dredge veal shanks in flour, shaking off excess.</li>
+        <li>Heat olive oil in a large ovenproof pot over medium-high heat. Brown veal shanks on all sides, then remove and set aside.</li>
+        <li>In the same pot, add onion, garlic, carrots, and celery. Cook until softened.</li>
+        <li>Add white wine, scraping up any browned bits from the bottom of the pot. Stir in crushed tomatoes, beef broth, bay leaf, and thyme.</li>
+        <li>Return veal shanks to the pot. Bring to a simmer.</li>
+        <li>Cover and transfer to the oven. Cook for 2-2.5 hours, or until the meat is tender and falling off the bone.</li>
+        <li>Garnish with lemon zest and chopped parsley before serving.</li>
+    </ul>
+</div>
+
         </div>
     </section>
         </div>
@@ -608,4 +1415,46 @@
 </body>
 </html>
 
+<!--Search Bar-->
+<p id="no-results" class="hidden">No recipes found.</p>
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        const searchTerm = document.getElementById('search-input').value.toLowerCase();
+        const recipes = document.querySelectorAll('.recipe');
+        let found = false;
+    
+        recipes.forEach(recipe => {
+            const recipeTitle = recipe.querySelector('h3').textContent.toLowerCase();
+            if (recipeTitle.includes(searchTerm)) {
+                recipe.style.display = 'block';
+                found = true;
+            } else {
+                recipe.style.display = 'none';
+            }
+        });
+    
+        if (!found) {
+            document.getElementById('no-results').classList.remove('hidden');
+        } else {
+            document.getElementById('no-results').classList.add('hidden');
+        }
+    });
+    </script>
 
+<div id="intro-animation">
+    <div class="title">Welcome to Simple Recipes!</div>
+    <div class="subtitle">Created by Suzuki Harry</div>
+    <!-- Circle Elements -->
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+    <!-- Square Elements -->
+    <div class="square one"></div>
+    <div class="square two"></div>
+    <div class="square three"></div>
+    <!-- Message Elements -->
+    <div class="message one">Simple Recipes!</div>
+    <div class="message two">Very Cool!</div>
+    <div class="message three">Easy and Simple!</div>
+    <div class="message four">Find Your Loved Recipes Here!</div>
+</div>
