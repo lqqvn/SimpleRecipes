@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Example CSS for visibility and layout */
+        .recipe { display: block; } /* Ensure recipes are initially visible */
+        .hidden { display: none; }
+        .not-found { color: red; }
+        .navbar .dropdown-content { display: none; }
+        .navbar .dropdown:hover .dropdown-content { display: block; }
+        /* Remove Korean section styles */
+    </style>
 </head>
-<!--Existing Scripts-->
 <body>
     <header class="header-content">
         <div class="logo">SR! Explore Wonderful Recipes!</div>
@@ -15,9 +23,8 @@
             <button id="search-button">Search</button>
             <button id="back-button">Back</button> <!-- Button to clear search -->
         </div>
-        <div class="not-found" style="display: none;">Not Found</div> <!-- Message for no results -->
+        <div class="not-found hidden">No recipes found</div> <!-- Message for no results -->
         
-        </div>
         <nav class="navbar">
             <a href="#homepage" class="nav-link">Homepage</a>
             <div class="dropdown">
@@ -30,17 +37,13 @@
             </div>
         </nav>
     </header>
-    
+    <!-- Existing sections -->
     <section id="homepage">
-        <div class="homepage">
-            <div class="homepage-content">
-                <h2>Simple Recipes</h2>
-                <p>Welcome to Simple Recipes! Here, you'll find a variety of recipes from different cooking styles, all presented in a simple and stylish way. Enjoy exploring and cooking!
-
-                    To start discovering different cooking styles, visit the Cooking Styles section at the top right of the website.</p>
-                    
-                <p>If you notice any issues with the ingredients or instructions, please don't hesitate to contact me via email at harrymangubat2008@gmail.com or through my Facebook account, Suzuki John Harry.</p>
-            </div>
+        <div class="homepage-content">
+            <h2>Simple Recipes</h2>
+            <p>Welcome to Simple Recipes! Here, you'll find a variety of recipes from different cooking styles, all presented in a simple and stylish way. Enjoy exploring and cooking!</p>
+            <p>To start discovering different cooking styles, visit the Cooking Styles section at the top right of the website.</p>
+            <p>If you notice any issues with the ingredients or instructions, please don't hesitate to contact me via email at harrymangubat2008@gmail.com or through my Facebook account, Suzuki John Harry.</p>
         </div>
     </section>
 
@@ -1390,11 +1393,12 @@
         <li>Garnish with lemon zest and chopped parsley before serving.</li>
     </ul>
 </div>
+        </div>
+    </section>
+        </div>
+    </section>
 
-        </div>
-    </section>
-        </div>
-    </section>
+
 
     <div id="recipe-detail" class="hidden">
         <button id="back-btn">Back</button>
@@ -1415,33 +1419,8 @@
 </body>
 </html>
 
-<!--Search Bar-->
-<p id="no-results" class="hidden">No recipes found.</p>
-<script>
-    document.getElementById('search-button').addEventListener('click', function() {
-        const searchTerm = document.getElementById('search-input').value.toLowerCase();
-        const recipes = document.querySelectorAll('.recipe');
-        let found = false;
-    
-        recipes.forEach(recipe => {
-            const recipeTitle = recipe.querySelector('h3').textContent.toLowerCase();
-            if (recipeTitle.includes(searchTerm)) {
-                recipe.style.display = 'block';
-                found = true;
-            } else {
-                recipe.style.display = 'none';
-            }
-        });
-    
-        if (!found) {
-            document.getElementById('no-results').classList.remove('hidden');
-        } else {
-            document.getElementById('no-results').classList.add('hidden');
-        }
-    });
-    </script>
-
-<div id="intro-animation">
+  <!-- Intro Animation -->
+  <div id="intro-animation">
     <div class="title">Welcome to Simple Recipes!</div>
     <div class="subtitle">Created by Suzuki Harry</div>
     <!-- Circle Elements -->
@@ -1458,3 +1437,89 @@
     <div class="message three">Easy and Simple!</div>
     <div class="message four">Find Your Loved Recipes Here!</div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Toggle the visibility of recipe content on header click
+        document.querySelectorAll('.recipe-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Navigation link click event
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.add('hidden');
+                });
+                // Show the target section
+                const target = document.querySelector(link.getAttribute('href'));
+                target.classList.remove('hidden');
+
+                // Check if the user navigates back to the homepage
+                if (link.getAttribute('href') === '#homepage') {
+                    showBottomSection();
+                }
+            });
+        });
+
+        // Back button functionality
+        document.getElementById('back-button').addEventListener('click', () => {
+            document.getElementById('recipe-detail').classList.add('hidden');
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('hidden');
+            });
+
+            // Ensure the bottom section is visible when going back
+            showBottomSection();
+        });
+
+        // Check if the user has visited before during this session
+        if (!sessionStorage.getItem('visited')) {
+            // Show the intro animation
+            const introAnimation = document.createElement('div');
+            introAnimation.id = 'intro-animation';
+            introAnimation.innerHTML = `
+                <div class="title">Welcome to Simple Recipes!</div>
+                <div class="subtitle">Created by Suzuki Harry</div>
+            `;
+            document.body.appendChild(introAnimation);
+
+            // Set the session storage so the animation doesn't replay
+            sessionStorage.setItem('visited', 'true');
+
+            // Remove the animation div after it finishes
+            setTimeout(() => {
+                introAnimation.remove();
+            }, 5000); // Matches the duration of the animations + delays
+        }
+    });
+
+    // Search functionality
+    document.getElementById('search-button').addEventListener('click', function() {
+        const searchTerm = document.getElementById('search-input').value.toLowerCase();
+        const recipes = document.querySelectorAll('.recipe');
+        let found = false;
+
+        recipes.forEach(recipe => {
+            const recipeTitle = recipe.querySelector('h3').textContent.toLowerCase();
+            if (recipeTitle.includes(searchTerm)) {
+                recipe.style.display = 'block';
+                found = true;
+            } else {
+                recipe.style.display = 'none';
+            }
+        });
+
+        if (!found) {
+            document.querySelector('.not-found').style.display = 'block'; // Show "Not Found" message
+        } else {
+            document.querySelector('.not-found').style.display = 'none'; // Hide "Not Found" message
+        }
+    });
+</script>
+</body>
+</html>
