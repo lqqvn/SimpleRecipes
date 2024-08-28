@@ -615,3 +615,51 @@ section {
 
 
 /*Other Existing Scripts Below*/
+/* General Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .logo {
+        font-size: 1.5em; /* Adjust logo size for smaller screens */
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: calc(100% - 90px); /* Adjust input width */
+    }
+
+    .search-button {
+        width: 80px; /* Adjust button width */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navigation links vertically */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+
+    .dropdown-content {
+        position: static; /* Ensure dropdown content is not hidden */
+        background-color: #f9f9f9;
+        box-shadow: none; /* Remove shadow for simplicity */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block; /* Show dropdown content on hover */
+    }
+
+    .hidden {
+        display: none; /* Ensure hidden elements are still hidden */
+    }
+}

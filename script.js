@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Toggle the visibility of recipe content on header click
-    document.querySelectorAll('.recipe-header').forEach(header => {
-        header.addEventListener('click', () => {
-            const content = header.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-
     // Navigation link click event
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', (event) => {
@@ -20,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show the target section
             const target = document.querySelector(link.getAttribute('href'));
             target.classList.remove('hidden');
-
+            
             // Check if the user navigates back to the homepage
             if (link.getAttribute('href') === '#homepage') {
                 showBottomSection();
@@ -63,12 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchTerm = this.value.toLowerCase().trim();
         const recipes = document.querySelectorAll('.recipe');
         let found = false;
+        let foundRecipe = null;
+        let targetSection = null;
 
         recipes.forEach(recipe => {
             const recipeTitle = recipe.querySelector('h3').textContent.toLowerCase();
             if (recipeTitle.includes(searchTerm)) {
                 recipe.style.display = 'block';
                 found = true;
+                foundRecipe = recipe;
+                targetSection = recipe.closest('section');
             } else {
                 recipe.style.display = 'none';
             }
@@ -79,6 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.not-found').style.display = 'none';
         } else {
             document.querySelector('.not-found').style.display = 'block';
+        }
+
+        // If a recipe is found, navigate to its section and scroll to it
+        if (found && targetSection) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            targetSection.classList.remove('hidden');
+            foundRecipe.scrollIntoView({ behavior: 'smooth' });
         }
     });
 
@@ -109,4 +114,3 @@ function showBottomSection() {
         bottomSection.style.display = 'block';
     }
 }
-
