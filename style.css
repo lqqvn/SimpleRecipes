@@ -663,3 +663,55 @@ section {
         display: none; /* Ensure hidden elements are still hidden */
     }
 }
+
+/* Styling for images (for each recipe) */
+.recipe img.recipe-image {
+    max-width: 100%; /* Ensures the image does not exceed the width of the container */
+    height: auto;    /* Maintains the aspect ratio */
+    margin-top: 10px;
+    border-radius: 8px; /* Optional: For rounded corners */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the recipe container */
+.recipe-container {
+    max-width: 100%;
+    padding: 10px; /* Adjust as needed */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .recipe img.recipe-image {
+        max-width: 50%; /* Limit the image to 50% of the recipe box's width */
+    }
+
+    .recipe-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px; /* Adjust as needed */
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+    .recipe img.recipe-image {
+        max-width: 80%; /* Limit the image to 80% of the recipe box's width */
+    }
+
+    .recipe-container {
+        padding: 5px; /* Adjust padding as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+    }
+
+    .recipe-content {
+        margin: 0;
+        padding: 0;
+    }
+}
