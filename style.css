@@ -663,3 +663,28 @@ section {
         display: none; /* Ensure hidden elements are still hidden */
     }
 }
+
+/* Styling for images (for each recipes) */
+.recipe img.recipe-image {
+    max-width: 100%; /* Ensures the image does not exceed the width of the container */
+    height: auto;    /* Maintains the aspect ratio */
+    margin-top: 10px;
+    border-radius: 8px; /* Optional: For rounded corners */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .recipe img.recipe-image {
+        max-width: 50%; /* Limit the image to 50% of the recipe box's width */
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+    .recipe img.recipe-image {
+        max-width: 80%; /* Limit the image to 80% of the recipe box's width */
+    }
+}
