@@ -22,6 +22,6 @@ You can view the live website here: [Simple Recipes Website](https://lqqvn.githu
 
 ## Technologies Used
 
-- **HTML5**: For structuring the website content.
-- **CSS3**: For styling and layout.
-
+- **HTML**: Used to structure the content, providing the backbone of the website.
+- **CSS**: Employed for styling and layout, ensuring a visually appealing and responsive design.
+- **JavaScript**: Adds interactivity, enabling features like recipe search.
