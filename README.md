@@ -10,7 +10,6 @@ You can view the live website here: [Simple Recipes Website](https://lqqvn.githu
 
 - **Responsive Design**: The website is fully responsive and works well on both desktop and mobile devices.
 - **Recipe Search**: Users can search for specific recipes directly from the homepage or within different cooking style sections.
-- **Save Recipes**: Visitors can save their favorite recipes using the "Save Recipe" button. Saved recipes are stored in `localStorage` and persist across sessions.
 - **Full-Screen Welcome Animation**: A custom animation plays when users first visit the site, creating an engaging introduction.
 - **Organized Recipe Sections**: Recipes are categorized into different sections, making navigation easy.
 
