@@ -24,4 +24,4 @@ You can view the live website here: [Simple Recipes Website](https://lqqvn.githu
 
 - **HTML5**: For structuring the website content.
 - **CSS3**: For styling and layout.
-- **
+
